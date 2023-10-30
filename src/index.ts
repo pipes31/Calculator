@@ -19,8 +19,15 @@ const displayValue = (i?: string) => {
     if (i === undefined) {
       i = "";
       displayId.textContent = value + i;
+    } else {
+      displayId.textContent = value + i;
     }
   }
+};
+const displayResult = () => {
+  value = result.toString().slice(0, 9);
+  firstNumber = result;
+  displayValue();
 };
 // Función para borrar Datos
 function reset() {
@@ -35,8 +42,8 @@ function reset() {
 }
 
 // function to display the number in the calculator
-const displayNumber = (a: string) => {
-  value = (value + a).slice(0, 9);
+const displayNumber = (newNumber: string) => {
+  value = (value + newNumber).slice(0, 9);
   value = parseFloat(value).toString();
   displayValue();
   numberChecker();
@@ -67,12 +74,9 @@ const mathOperation = (id: string) => {
   setter = true;
   dot = false;
   operator;
+  console.log(value);
 };
-const displayResult = () => {
-  value = result.toString().slice(0, 9);
-  displayValue();
-  firstNumber = result;
-};
+
 const addition = () => {
   result = firstNumber + secondNumber;
   displayResult();
@@ -124,12 +128,11 @@ const solution = () => {
 const sqrtResult = () => {
   if (firstNumber >= 0) {
     result = Math.sqrt(firstNumber);
-
-    value = result.toString();
+    value = result.toString().slice(0, 9);
     displayValue();
   } else {
     result = Math.sqrt(firstNumber * -1);
-    value = result.toString();
+    value = result.toString().slice(0, 9);
     displayValue("j");
   }
 };
