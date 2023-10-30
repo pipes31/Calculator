@@ -11,10 +11,10 @@
       rel="stylesheet"
     />
     <title>Calculator</title>
-    <link rel="stylesheet" href="src/css/estilos.css" />
+    <link rel="stylesheet" href="src/assets/css/estilos.css" />
     <link rel="stylesheet" type="text/css" href="src/js/jquery-ui.css" />
-    <script type="module" src="src/js/jquery.js"></script>
-    <script type="module" src="src/js/jquery-ui.js"></script>
+    <script type="module" src="src/scripts/jquery.js"></script>
+    <script type="module" src="src/scripts/jquery-ui.js"></script>
   </head>
   <body>
     <div class="fondo">
@@ -33,133 +33,72 @@
         </div>
 
         <div class="teclado">
+          <img src="src/assets/image/ON.png" alt="On" class="tecla" id="on" />
           <img
-            src="src/image/ON.png"
-            alt="On"
+            src="src/assets/image/sign.png"
+            alt="signo"
             class="tecla"
-            id="on"
-            onclick="reset()"
+            id="sign"
           />
-          <img src="src/image/sign.png" alt="signo" class="tecla" id="sign" />
           <img
-            src="src/image/raiz.png"
+            src="src/assets/image/raiz.png"
             alt="raiz"
             class="tecla"
-            id="raiz"
-            onclick="sqrtResult()"
+            id="sqrt"
           />
           <img
-            src="src/image/dividido.png"
+            src="src/assets/image/dividido.png"
             alt="dividido"
             class="tecla divide"
-            id="dividido"
-            onclick="mathOperation(4)"
+            id="division"
           />
 
+          <img src="src/assets/image/7.png" alt="7" class="tecla" id="7" />
+          <img src="src/assets/image/8.png" alt="8" class="tecla" id="8" />
+          <img src="src/assets/image/9.png" alt="9" class="tecla" id="9" />
           <img
-            src="src/image/7.png"
-            alt="7"
-            class="tecla"
-            id="7"
-            onclick="showNumber(7)"
-          />
-          <img
-            src="src/image/8.png"
-            alt="8"
-            class="tecla"
-            id="8"
-            onclick="showNumber(8)"
-          />
-          <img
-            src="src/image/9.png"
-            alt="9"
-            class="tecla"
-            id="9"
-            onclick="showNumber(9)"
-          />
-          <img
-            src="src/image/por.png"
+            src="src/assets/image/por.png"
             alt="por"
             class="tecla multiplica"
-            id="por"
-            onclick="mathOperation(3)"
+            id="multiplication"
           />
 
+          <img src="src/assets/image/4.png" alt="4" class="tecla" id="4" />
+          <img src="src/assets/image/5.png" alt="5" class="tecla" id="5" />
+          <img src="src/assets/image/6.png" alt="6" class="tecla" id="6" />
           <img
-            src="src/image/4.png"
-            alt="4"
-            class="tecla"
-            id="4"
-            onclick="showNumber(4)"
-          />
-          <img
-            src="src/image/5.png"
-            alt="5"
-            class="tecla"
-            id="5"
-            onclick="showNumber(5)"
-          />
-          <img
-            src="src/image/6.png"
-            alt="6"
-            class="tecla"
-            id="6"
-            onclick="showNumber(6)"
-          />
-          <img
-            src="src/image/menos.png"
+            src="src/assets/image/menos.png"
             alt="menos"
             class="tecla resta"
-            id="menos"
-            onclick="mathOperation(2)"
+            id="subtraction"
           />
 
           <div class="row">
             <div class="col1">
-              <img
-                src="src/image/1.png"
-                alt="1"
-                class="tecla"
-                id="1"
-                onclick="showNumber(1)"
-              />
-              <img
-                src="src/image/2.png"
-                alt="2"
-                class="tecla"
-                id="2"
-                onclick="showNumber(2)"
-              />
-              <img
-                src="src/image/3.png"
-                alt="3"
-                class="tecla"
-                id="3"
-                onclick="showNumber(3)"
-              />
+              <img src="src/assets/image/1.png" alt="1" class="tecla" id="1" />
+              <img src="src/assets/image/2.png" alt="2" class="tecla" id="2" />
+              <img src="src/assets/image/3.png" alt="3" class="tecla" id="3" />
 
-              <img src="src/image/0.png" alt="0" class="tecla" id="0" />
+              <img src="src/assets/image/0.png" alt="0" class="tecla" id="0" />
               <img
-                src="src/image/punto.png"
+                src="src/assets/image/punto.png"
                 alt="punto"
                 class="tecla"
                 id="punto"
               />
               <img
-                src="src/image/igual.png"
+                src="src/assets/image/igual.png"
                 alt="igual"
                 class="tecla"
-                id="igual"
-                onclick="solution()"
+                id="equal"
               />
             </div>
             <div class="col2">
               <img
-                src="src/image/mas.png"
+                src="src/assets/image/mas.png"
                 alt="mas"
                 class="tecla suma"
-                id="mas"
-                onclick="mathOperation(1)"
+                id="addition"
               />
             </div>
           </div>
@@ -187,6 +126,6 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="src/index.ts"></script>
   </body>
 </html>
