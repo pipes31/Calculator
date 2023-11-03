@@ -173,6 +173,7 @@ document.getElementById("on")?.addEventListener("click", function () {
 
 // Aplicando efecto al oprimir tecla
 document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("keydown", function (event) {});
   function addClickEffect(id: string) {
     const element = document.getElementById(id);
     if (element) {
